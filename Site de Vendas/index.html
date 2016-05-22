@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="css/estilo.css">
 	<title>LOJA X | Inicio</title>
  </head>
- <body>
+ <body onload="myFunction()">
 	<div id="logo">
 		<img src="img/logo.jpg" alt="Logotipo da Loja" style="width:410px;height:230px;">
 	</div>
@@ -34,11 +34,18 @@
 		<a href="smartphones.html">Smartphones</a> |
 		<a href="tablets.html">Tablets</a>
 	</nav>
+	<!-- BANNER -->
 	<div id="banners">
-		
-		<!-- inserir link do java script aqui -->
-		
+		<link rel="stylesheet" type="text/css" href="css/estiloBanner.css" scoped="scoped"/>
+		<div id="wrapper">
+			<a id="bannerclick" href="#">
+			<img id="banner" src="img/banner1.jpg"></img></a>
+			</br>
+		</div>
+		<div id="bip"></div>
+		<script type="text/javascript" src="js/rotinaBanner.js"></script>
 	</div>
+	
 	<section>
 		<img src="img/notebook1.jpg" alt="Notebook" style="width:375px;height:282px">
 		<h2>Notebook Samsung SGH-7845</h2>

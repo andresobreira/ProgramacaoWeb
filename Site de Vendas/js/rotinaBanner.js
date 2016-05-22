@@ -1,7 +1,7 @@
 	var counter=1;
 	var intervalId=null;
 	var totalimg=0;
-	var imgsrc="a.jpg";
+	var imgsrc="img/banner1.jpg";
 	var imglink="#";
 	function myFunction(){
 	
@@ -22,16 +22,16 @@
 	     counter=1;
 		 totalimg=totalimg+1;
 		 if(totalimg==1){
-		    imgsrc="b.jpg";
+		    imgsrc="img/banner2.jpg";
 			imglink="#";
 		  }
 		  else if(totalimg==2){
-		    imgsrc="c.jpg";
+		    imgsrc="img/banner3.jpg";
 			imglink="#";
 		
 		   }
 		  else if(totalimg==3){
-		    imgsrc="d.jpg";
+		    imgsrc="img/banner4.jpg";
 			imglink="#";
 			totalimg=0;
 		  }

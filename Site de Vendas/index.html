@@ -3,63 +3,65 @@
  <head>
   <meta charset="UTF-8">
 	<link rel="stylesheet" href="css/estilo.css">
-	<title>LOJA X | Inicio</title>
+	<title>ON Informática | Inicio</title>
  </head>
  <body onload="myFunction()">
-	<div id="logo">
-		<img src="img/logo.jpg" alt="Logotipo da Loja" style="width:410px;height:230px;">
-	</div>
-	<header>
-		<h1>LOJA X</h1>
-		<div id="login">
-			<form>
-				login:<br>
-				<input type="text" name="username"><br>
-				senha:<br>
-				<input type="password" name="psw"><br>
-				<input type="submit" value="Entrar">
-			</form>
-		</div>
-		<div id="busca">
-			<form>
-				Encontre:
-				<input type="search" name="busca">
-				<button type="button" action="">Buscar</button>
-			</form>
-		</div>
+	<div id="interface">
+	<header id="cabecalho">
+	    <hgroup>
+		<h1>ON Informática</h1>
+		<h2>Segurança em sua compra Online</h2>
+		</hgroup>
+		<hgroup id="login">
+			Login:<br>
+			<input type="text" name="username"><br>
+			Senha:<br>
+			<input type="password" name="psw"><br><br>
+			<input type="submit" value="Entrar">
+		</hgroup>
+		<form id="busca">
+			Encontre:
+			<input type="search" name="busca">
+			<button type="button" action="">Buscar</button>
+		</form>
 	</header>
-	<nav>
-		<a href="index.html" title="Home">Inicio</a> |
-		<a href="notebooks.html" title="Notebooks">Notebooks</a> |
-		<a href="smartphones.html">Smartphones</a> |
-		<a href="tablets.html">Tablets</a>
+	<!-- MENU -->
+	<nav id="menu">
+	 <ul>
+		<li><a href="index.html" title="Home">Inicio</a> </li>
+		<li><a href="notebooks.html" title="Notebooks">Notebooks</a> </li>
+		<li><a href="smartphones.html">Smartphones</a> </li>
+		<li><a href="tablets.html">Tablets</a></li>
+	 </ul>
 	</nav>
 	<!-- BANNER -->
-	<div id="banners">
+	<section id="promocao">
 		<link rel="stylesheet" type="text/css" href="css/estiloBanner.css" scoped="scoped"/>
-		<div id="wrapper">
+	    <div id="wrapper">
 			<a id="bannerclick" href="#">
-			<img id="banner" src="img/banner1.jpg"></img></a>
-			</br>
+			<img id="banner" src="img/banner1.jpg"></img>
+			</a></br>
 		</div>
 		<div id="bip"></div>
 		<script type="text/javascript" src="js/rotinaBanner.js"></script>
-	</div>
-	
-	<section>
-		<img src="img/notebook1.jpg" alt="Notebook" style="width:375px;height:282px">
-		<h2>Notebook Samsung SGH-7845</h2>
-		<img src="img/tablet1.jpg" alt="Tablet" style="width:400px;heigth:400px">
-		<h2>Tablet Phaser Kinno PC205</h2>
-		<img src="img/smartphone1.jpg" alt="Smartphone" style="width:414px;height:414px">
-		<h2>Smartphone Sony Xperia Z5</h2>
 	</section>
+	<!-- IMAGENS -->
+	<article id="imagens">
+		<img id="notebook "src="img/notebook1.jpg" alt="Notebook" style="width:400px;heigth:400px">
+		<figcaption id="notebook1"><h2>Notebook Samsung SGH-7845</h2></figcaption>
+		<img id="tablet" src="img/tablet1.jpg" alt="Tablet" >
+		<figcaption id="tablet1" ><h2>Tablet Phaser Kinno PC205</h2></figcaption>
+		<img id="celular" src="img/smartphone1.jpg" alt="Smartphone">
+		<figcaption id="celular1" ><h2>Smartphone Sony Xperia Z5</h2></figcaption>
+	</article>
+	<!-- PUBLICIDADES -->
 	<div id="publi1">
 		<img src="img/publi1.jpg" alt="Publicidade 1" sytle="width:820px;height:460px">
 	</div>
 	<div id="publi2">
 		<img src="img/publi2.jpg" alt="Publicidade 2" sytle="width:410px;height:230px">
 	</div>
+	<!-- RODAPÉ -->
 	<footer>
 		<a href="index.html">Voltar para cima.</a>
 		<p>Desenvolvido por: André S. & Romen D.</p>

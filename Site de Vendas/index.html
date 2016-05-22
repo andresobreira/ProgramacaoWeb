@@ -2,7 +2,7 @@
  <html lang="pt-br">
  <head>
   <meta charset="UTF-8">
-	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css" />
 	<title>ON Informática | Inicio</title>
  </head>
  <body onload="myFunction()">
@@ -16,13 +16,15 @@
 			Login:<br>
 			<input type="text" name="username"><br>
 			Senha:<br>
-			<input type="password" name="psw"><br><br>
-			<input type="submit" value="Entrar">
+			<input type="password" name="psw"><br>
+			<input type="submit" value="Entrar"><br>
+			Não é cadastrado ainda? <br>
+			<a href="telaCadastro.html">Cadastre-se agora</a>
 		</hgroup>
-		<form id="busca">
-			Encontre:
-			<input type="search" name="busca">
-			<button type="button" action="">Buscar</button>
+		<!-- BUSCA NO SITE -->
+		<form id="busca" method="get" action="/search/">
+			<input type="search" name="busca" placeholder="Pesquisar...">		
+			<button type="button" action="">ok</button>
 		</form>
 	</header>
 	<!-- MENU -->
@@ -32,6 +34,7 @@
 		<li><a href="notebooks.html" title="Notebooks">Notebooks</a> </li>
 		<li><a href="smartphones.html">Smartphones</a> </li>
 		<li><a href="tablets.html">Tablets</a></li>
+		<li><a href="sobre.html">Sobre Nós</a></li>
 	 </ul>
 	</nav>
 	<!-- BANNER -->
@@ -47,7 +50,7 @@
 	</section>
 	<!-- IMAGENS -->
 	<article id="imagens">
-		<img id="notebook "src="img/notebook1.jpg" alt="Notebook" style="width:400px;heigth:400px">
+		<img id="notebook "src="img/notebook1.jpg" alt="Notebook" >
 		<figcaption id="notebook1"><h2>Notebook Samsung SGH-7845</h2></figcaption>
 		<img id="tablet" src="img/tablet1.jpg" alt="Tablet" >
 		<figcaption id="tablet1" ><h2>Tablet Phaser Kinno PC205</h2></figcaption>
@@ -56,14 +59,14 @@
 	</article>
 	<!-- PUBLICIDADES -->
 	<div id="publi1">
-		<img src="img/publi1.jpg" alt="Publicidade 1" sytle="width:820px;height:460px">
+		<img src="img/publi1.jpg" alt="Publicidade 1">
 	</div>
 	<div id="publi2">
-		<img src="img/publi2.jpg" alt="Publicidade 2" sytle="width:410px;height:230px">
+		<img src="img/publi2.jpg" alt="Publicidade 2">
 	</div>
 	<!-- RODAPÉ -->
 	<footer>
-		<a href="index.html">Voltar para cima.</a>
+		<a href="index.html">Ir para o topo.</a>
 		<p>Desenvolvido por: André S. & Romen D.</p>
 		<p>Contato: <a href="mailto:someone@example.com">andre@email.com</a>.</p>
 		<p>Criado em: 20 de maio de 2016.</p>

@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 <style>
 
 /*Formatação  Cabeçalho*/
@@ -146,35 +146,18 @@ div#interface {
 article#imagens img{
 	margin-bottom:40px;
 	width:350px;
-	height:300px;
-	padding:0px;
+	height:280px;
+	margin:10px;
 	float:left;
+	border: 5px solid #ffffff;
+	background-color:#ffffff;
+	box-shadow:1px 1px 3px rgba(0,0,0,.4);
+	-webkit-transition: all .4s ease-in;
+}
+article#imagens img:hover{
+	-webkit-transform:scale(1.5);
 }
 
-img#notebook {
-	position:relative;
-	left:10px;
-	top:10px;
-	width:350px;
-	height:350px;
-	border: 4px solid red;
-}
-
-img#tablet {
-    position:relative;
-    left:60px;
-    top: 0px;
-    width:300px;
-	height:100px;	
-	
-}
-img#celular {
-	position:relative;
-    left:100px;
-    top: 0px;
-    width:300px;
-	height:250px;
-}
 figcaption#notebook1{
 	position: relative;
 	left:-350px;
@@ -188,7 +171,7 @@ figcaption#tablet1{
 figcaption#celular1{
 	position:relative;
 	left:850px;
-	top:-30px;
+	top:-10px;
 }
 
  figcaption#imagem1{
@@ -231,7 +214,7 @@ figcaption#imagem6{
 	}
 /*Formatação para os Campos Publicidade*/
 
-div#publi1  img{
+aside#publi1 img{
 	position:relative;
 	left:10px;
 	top:50px;
@@ -243,7 +226,8 @@ div#publi1  img{
 	margin-top:40px;
 }
 
-div#publi2 img{
+aside#publi2 img{
+	display:block;
 	position:relative;
     left:620px;
     top:-342px;	
@@ -270,12 +254,12 @@ section#sobre {
 	padding: 30px;
 	text-align:justify;
 	font-size: 20pt;
-	font-family:Arial, sans-serif;
+	font-family: 'Indie Flower', cursive;
 	color:#888888;
 	margin:0px;
 }
 section#sobre h1{
-	font-family: Arial, sans-serif;
+	font-family: 'Indie Flower', cursive;
 	font-size: 40pt;
 	color: black;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.6);

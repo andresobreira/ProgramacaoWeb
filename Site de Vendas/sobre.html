@@ -8,6 +8,10 @@
  <body onload="myFunction()">
 	<div id="interface">
 	<header id="cabecalho">
+		<a accesskey="1" href="#menu" id="link-conteudo">Ir para o conteúdo <span>1</span></a>
+		<a accesskey="2" href="#cabecalho" id="link-menu">Ir para o menu <span>2</span></a>
+		<a accesskey="3" href="#rodape" id="link-rodape">Ir para o rodapé <span>3</span></a>
+		<a accesskey="4" href="#busca" id="link-busca">Ir para busca <span>4</span></a>
 	    <hgroup>
 		<h1>ON Informática</h1>
 		<h2>Segurança em sua compra Online</h2>
@@ -23,7 +27,7 @@
 		</hgroup>
 		<!-- BUSCA NO SITE -->
 		<form id="busca" method="get" action="/search/">
-			<input id="caixa" type="search" name="busca" placeholder="Pesquisar...">		
+			<input id="caixa" type="search" name="busca" placeholder="Pesquisar...">	
 			<button type="button" action="">ok</button>
 		</form>
 	</header>
@@ -47,8 +51,8 @@
 	</section>
 	
 	<!-- RODAPÉ -->
-	<footer>
-		<a href="index.html">Ir para o topo.</a>
+	<footer id="rodape">
+		<a id="gotop" href="#" onclick="MGJS.goTop();return false;">Ir para o topo.</a>
 		<p>Desenvolvido por: André S. & Romen D.</p>
 		<p>Contato: <a href="mailto:someone@example.com">andre@email.com</a>.</p>
 		<p>Criado em: 20 de maio de 2016.</p>

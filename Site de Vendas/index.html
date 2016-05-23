@@ -2,7 +2,7 @@
  <html lang="pt-br">
  <head>
   <meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+	<link rel="stylesheet" href="css/estilo.css">
 	<title>ON Informática | Inicio</title>
  </head>
  <body onload="myFunction()">
@@ -16,14 +16,14 @@
 			Login:<br>
 			<input type="text" name="username"><br>
 			Senha:<br>
-			<input type="password" name="psw"><br>
-			<input type="submit" value="Entrar"><br>
+			<input type="password" name="psw"><br><br>
+			<input type="submit" value="Entrar">
 			Não é cadastrado ainda? <br>
 			<a href="telaCadastro.html">Cadastre-se agora</a>
 		</hgroup>
 		<!-- BUSCA NO SITE -->
 		<form id="busca" method="get" action="/search/">
-			<input type="search" name="busca" placeholder="Pesquisar...">		
+			<input id="caixa" type="search" name="busca" placeholder="Pesquisar...">		
 			<button type="button" action="">ok</button>
 		</form>
 	</header>
@@ -50,7 +50,7 @@
 	</section>
 	<!-- IMAGENS -->
 	<article id="imagens">
-		<img id="notebook "src="img/notebook1.jpg" alt="Notebook" >
+		<img id="notebook "src="img/notebook1.jpg" alt="Notebook" style="width:400px;heigth:400px">
 		<figcaption id="notebook1"><h2>Notebook Samsung SGH-7845</h2></figcaption>
 		<img id="tablet" src="img/tablet1.jpg" alt="Tablet" >
 		<figcaption id="tablet1" ><h2>Tablet Phaser Kinno PC205</h2></figcaption>
@@ -59,14 +59,14 @@
 	</article>
 	<!-- PUBLICIDADES -->
 	<div id="publi1">
-		<img src="img/publi1.jpg" alt="Publicidade 1">
+		<img src="img/publi1.jpg" alt="Publicidade 1" sytle="width:820px;height:460px">
 	</div>
 	<div id="publi2">
-		<img src="img/publi2.jpg" alt="Publicidade 2">
+		<img src="img/publi2.jpg" alt="Publicidade 2" sytle="width:410px;height:230px">
 	</div>
 	<!-- RODAPÉ -->
 	<footer>
-		<a href="index.html">Ir para o topo.</a>
+		<a href="index.html">Voltar para cima.</a>
 		<p>Desenvolvido por: André S. & Romen D.</p>
 		<p>Contato: <a href="mailto:someone@example.com">andre@email.com</a>.</p>
 		<p>Criado em: 20 de maio de 2016.</p>

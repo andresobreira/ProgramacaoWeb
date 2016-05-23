@@ -26,12 +26,12 @@
 			imglink="#";
 		  }
 		  else if(totalimg==2){
-		    imgsrc="img/banner3.jpg";
+		    imgsrc="img/banner3.png";
 			imglink="#";
 		
 		   }
 		  else if(totalimg==3){
-		    imgsrc="img/banner4.jpg";
+		    imgsrc="img/banner4.png";
 			imglink="#";
 			totalimg=0;
 		  }

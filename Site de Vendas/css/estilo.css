@@ -144,7 +144,7 @@ article#imagens li{
 	border: 5px solid #ffffff;
 	background-color:#ffffff;
 	box-shadow:1px 1px 3px rgba(0,0,0,.4);
-	-webkit-transition: all 4s ease-in;
+	-webkit-transition: all 0.3s ease-in;
 }
 article#imagens h2{
 	position:relative;
@@ -167,68 +167,69 @@ article#imagens li#tablet{
 article#imagens li#celular{
 	background: url('../img/smartphone1.png') no-repeat;
 }
-article#imagens img{
-	margin-bottom:40px;
-	width:370px;
-	height:280px;
-	margin:10px;
-	float:left;
-	border: 5px solid #ffffff;
-	background-color:#ffffff;
-	box-shadow:1px 1px 3px rgba(0,0,0,.4);
-	-webkit-transition: all .4s ease-in;
+
+/*Imagens Notebooks*/
+
+article#imagens li#notebook1{
+	background: url('../img/notebook1.png') no-repeat;
+}
+article#imagens li#notebook2{
+	background: url('../img/notebook2.png') no-repeat;
+}
+article#imagens li#notebook3{
+	background: url('../img/notebook3.png') no-repeat;
+}
+article#imagens li#notebook4{
+	background: url('../img/notebook4.png') no-repeat;
+}
+article#imagens li#notebook5{
+	background: url('../img/notebook5.png') no-repeat;
+}
+article#imagens li#notebook6{
+	background: url('../img/notebook6.png') no-repeat;
+}
+/*Imagens Smartphones*/
+
+
+article#imagens li#celular1{
+	background: url('../img/smartphone.png') no-repeat;
+}
+article#imagens li#celular2{
+	background: url('../img/smartphone1.png') no-repeat;
+}
+article#imagens li#celular3{
+	background: url('../img/smartphone2.png') no-repeat;
+}
+article#imagens li#celular4{
+	background: url('../img/smartphone3.png') no-repeat;
+}
+article#imagens li#celular5{
+	background: url('../img/smartphone4.png') no-repeat;
+}
+article#imagens li#celular6{
+	background: url('../img/smartphone5.png') no-repeat;
 }
 
+/*Imagens Tablets*/
 
-figcaption#tablet1{
-	position:relative;
-	left:-300px;
-	top:300px;
+article#imagens li#tablet1{
+	background: url('../img/tablet1.png') no-repeat;
 }
-figcaption#celular1{
-	position:relative;
-	left:850px;
-	top:-10px;
+article#imagens li#tablet2{
+	background: url('../img/tablet2.png') no-repeat;
 }
-
- figcaption#imagem1{
-	 position: relative;
-	left:-300px;
-	top:300px;
-	 
-	}
-figcaption#imagem2{
-    position: relative;
-	left:-300px;
-	top:300px;
-	 
-	}
-figcaption#imagem3{
-    position:absolute;
-	left:850px;
-	top:1250px;
-
-	 
-	}
-
-figcaption#imagem4{
-	 position:absolute;
-	 left:100px;
-	 top:1600px;
-	 
-	}
-figcaption#imagem5{
-	 position:absolute;
-	 left:480px;
-	 top:1590px;
-	 
-	}
-figcaption#imagem6{
-	 position:absolute;
-	 top:1590px;
-	 left:850px;
-
-	}
+article#imagens li#tablet3{
+	background: url('../img/tablet3.png') no-repeat;
+}
+article#imagens li#tablet4{
+	background: url('../img/tablet4.png') no-repeat;
+}
+article#imagens li#tablet5{
+	background: url('../img/tablet5.png') no-repeat;
+}
+article#imagens li#tablet6{
+	background: url('../img/tablet6.png') no-repeat;
+}
 /*Formatação para os Campos Publicidade*/
 
 aside#publi1 img{
@@ -284,4 +285,38 @@ section#sobre h1{
 	top:0px;
 	left:430px;
 }
+/*Formatação dos Formulários */
+
+section#formulario {
+	width:800px;
+	margin:auto;
+}
+section#formulario input{
+	font-family:sans-serif;
+	font-weight:normal;
+	font-size:13pt;
+}
+section#formulario input:hover{
+	background-color:#dddddd;
+}
+section#formulario legend{
+	color:#888888;
+	font-weight:bold;
+	font-size:15pt;
+	font-family:sans-serif;
+}
+section#formulario fieldset{
+	border-color:#cecece;
+	margin:20px;
+}
+section#formulario fieldset#login{
+     background: url("../img/icone-login.png") no-repeat 80% 80%;
+}
+section#formulario fieldset#usuario{
+     background: url("../img/icone-contato.png") no-repeat 80% 80%;
+}
+section#formulario fieldset#endereco{
+	 background: url("../img/icone-endereco.png") no-repeat 80% 80%;
+}
+
 </style>

@@ -43,25 +43,24 @@
 	 </ul>
 	</nav>
 	<!-- CAMPOS DE CADASTRO -->
-	<section>
+	<section  id="formulario">
 		<!-- DADOS PESSOAIS-->
-	<fieldset>
+	<fieldset id="usuario">
 		<form method="post">
 		<legend>Dados Pessoais</legend>
 		<table cellspacing="10">
 			<tr>
 				<td><label for="nome">Nome*: </label></td><td align="left">
-					<input id="nome" type="text" required name="nome">
-				</td>
-				<td><label for="sobrenome">Sobrenome*: </label></td><td align="left">
-					<input id="sobrenome" type="text" required name="sobrenome">
+					<input id="nome" type="text" required name="pnome">
+				</td></tr>
+			<tr><td><label for="sobrenome">Sobrenome*: </label></td><td align="left">
+					<input id="sobrenome" type="text" required name="psobrenome">
 				</td>
 			</tr>
 			<tr>
 				<td><label>Nascimento*: </label></td><td align="left">
-				<input id="dia" type="text" required name="dia" size="2" maxlength="2" placeholder="dd"> 
-				<input id="mes" type="text" required name="mes" size="2" maxlength="2" placeholder="mm"> 
-				<input id="ano" type="text" required name="ano" size="4" maxlength="4" placeholder="aaaa">
+				<input id="cdata" type="date" required name="dataNasc" > 
+				
 				</td>
 			</tr>
 			<tr>
@@ -78,7 +77,7 @@
 	<br>
 	</fieldset>
 		<!-- ENDEREÇO -->
-	<fieldset>
+	<fieldset id="endereco">
 		<legend>Dados de Endereço</legend>
 		<table cellspacing="10">
 			<tr>
@@ -141,28 +140,28 @@
 		</fieldset>
 	<br>
 		<!-- DADOS DE LOGIN -->
-	<fieldset>
+	<fieldset id="login">
 	<legend>Dados de login</legend>
 		<table cellspacing="10">
 			<tr>
 				<td><label for="email">E-mail*: </label></td><td align="left">
-					<input id="email" type="text" required name="email">
+					<input id="email" type="email" required name="email">
 				</td>
 			</tr>
 			<tr>
 				<td><label for="pass">Senha*: </label></td><td align="left">
-					<input type="password" required name="pass">
+					<input type="password" required name="pass" placeholder="8 digitos">
 				</td>
 			</tr>
 			<tr>
 				<td><label for="passconfirm">Confirme a senha*: </label></td><td align="left">
-					<input id="senha" type="password" required name="passconfirm">
+					<input id="senha" type="password" required name="passconfirm" placeholder="8 digitos">
 				</td>
 			</tr>
 		</table>
 	</fieldset>
 	<h5>* campos obrigatórios.</h5>
-	<input type="submit" value="Enviar" ><br><br><!--onclick="saveTextAsFile()"-->
+	<input type="image" name="benviar" src="img/botao-enviar.png"><br><br><!--onclick="saveTextAsFile()"-->
 	</form>
 	</section>
 	<!-- RODAPÉ -->

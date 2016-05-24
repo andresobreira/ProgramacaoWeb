@@ -46,61 +46,62 @@
 	<section>
 		<!-- DADOS PESSOAIS-->
 	<fieldset>
+		<form method="post">
 		<legend>Dados Pessoais</legend>
 		<table cellspacing="10">
 			<tr>
-				<td><label for="nome">Nome: </label></td><td align="left">
-					<input id="nome" type="text" name="nome">
+				<td><label for="nome">Nome*: </label></td><td align="left">
+					<input id="nome" type="text" required name="nome">
 				</td>
-				<td><label for="sobrenome">Sobrenome: </label></td><td align="left">
-					<input id="sobrenome" type="text" name="sobrenome">
-				</td>
-			</tr>
-			<tr>
-				<td><label>Nascimento: </label></td><td align="left">
-				<input id="dia" type="text" name="dia" size="2" maxlength="2" value="dd"> 
-				<input id="mes" type="text" name="mes" size="2" maxlength="2" value="mm"> 
-				<input id="ano" type="text" name="ano" size="4" maxlength="4" value="aaaa">
+				<td><label for="sobrenome">Sobrenome*: </label></td><td align="left">
+					<input id="sobrenome" type="text" required name="sobrenome">
 				</td>
 			</tr>
 			<tr>
-				<td><label for="rg">RG: </label></td><td align="left">
-					<input id="rg" type="text" name="rg" size="13" maxlength="13"> 
+				<td><label>Nascimento*: </label></td><td align="left">
+				<input id="dia" type="text" required name="dia" size="2" maxlength="2" placeholder="dd"> 
+				<input id="mes" type="text" required name="mes" size="2" maxlength="2" placeholder="mm"> 
+				<input id="ano" type="text" required name="ano" size="4" maxlength="4" placeholder="aaaa">
 				</td>
 			</tr>
 			<tr>
-				<td><label>CPF:</label></td><td align="left">
-					<input id="cpf" type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+				<td><label for="rg">RG*: </label></td><td align="left">
+					<input id="rg" type="text" required name="rg" size="13" maxlength="13"> 
+				</td>
+			</tr>
+			<tr>
+				<td><label>CPF*:</label></td><td align="left">
+					<input id="cpf" type="text" required name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
 				</td>
 			</tr>
 		</table>	
-	<br />
+	<br>
 	</fieldset>
 		<!-- ENDEREÇO -->
 	<fieldset>
 		<legend>Dados de Endereço</legend>
 		<table cellspacing="10">
 			<tr>
-				<td><label for="rua">Rua:</label></td><td align="left">
-					<input id="rua" type="text" name="rua">
+				<td><label for="rua">Rua*:</label></td><td align="left">
+					<input id="rua" type="text" required name="rua">
 				</td>
-				<td><label for="numero">Numero:</label></td><td align="left">
-					<input id="numero" type="text" name="numero" size="4">
-				</td>
-			</tr>
-			<tr>
-				<td><label for="bairro">Bairro: </label></td><td align="left">
-					<input id="bairro" type="text" name="bairro">
+				<td><label for="numero">Numero*:</label></td><td align="left">
+					<input id="numero" type="text" required name="numero" size="4">
 				</td>
 			</tr>
 			<tr>
-				<td><label for="cidade">Cidade: </label></td><td align="left">
-					<input id="cidade" type="text" name="cidade">
+				<td><label for="bairro">Bairro*: </label></td><td align="left">
+					<input id="bairro" type="text" required name="bairro">
 				</td>
 			</tr>
 			<tr>
-				<td><label for="estado">Estado:</label></td><td align="left">
-					<select id="estado" name="estado"> 
+				<td><label for="cidade">Cidade*: </label></td><td align="left">
+					<input id="cidade" type="text" required name="cidade">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="estado">Estado*:</label></td><td align="left">
+					<select id="estado" required name="estado"> 
 					<option value="ac">Acre</option> 
 					<option value="al">Alagoas</option> 
 					<option value="am">Amazonas</option> 
@@ -132,36 +133,37 @@
 				</td>
 			</tr>
 			<tr>
-				<td><label for="cep">CEP: </label></td><td align="left">
-					<input id="cep" type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+				<td><label for="cep">CEP*: </label></td><td align="left">
+					<input id="cep" type="text" required name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
 				</td>
 			</tr>
 		</table>
 		</fieldset>
-	<br />
+	<br>
 		<!-- DADOS DE LOGIN -->
 	<fieldset>
 	<legend>Dados de login</legend>
 		<table cellspacing="10">
 			<tr>
-				<td><label for="email">E-mail: </label></td><td align="left">
-					<input id="email" type="text" name="email">
+				<td><label for="email">E-mail*: </label></td><td align="left">
+					<input id="email" type="text" required name="email">
 				</td>
 			</tr>
 			<tr>
-				<td><label for="pass">Senha: </label></td><td align="left">
-					<input type="password" name="pass">
+				<td><label for="pass">Senha*: </label></td><td align="left">
+					<input type="password" required name="pass">
 				</td>
 			</tr>
 			<tr>
-				<td><label for="passconfirm">Confirme a senha: </label></td><td align="left">
-					<input id="senha" type="password" name="passconfirm">
+				<td><label for="passconfirm">Confirme a senha*: </label></td><td align="left">
+					<input id="senha" type="password" required name="passconfirm">
 				</td>
 			</tr>
 		</table>
 	</fieldset>
-	<br />
+	<h5>* campos obrigatórios.</h5>
 	<input type="submit" value="Enviar" ><br><br><!--onclick="saveTextAsFile()"-->
+	</form>
 	</section>
 	<!-- RODAPÉ -->
 	<footer id="rodape">

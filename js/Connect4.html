@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+ <html lang="pt-br">
+ <head>
+  <meta charset="UTF-8">
+  <style>
+    #logotipo { margin: 0 auto; width: 940px; text-align:center; }
+    .linha { margin: 0 auto; width: 940px; text-align:center;}
+    .celula { border: solid; width: 120px; float:left; }
+  </style>
+   <script>
+    var vezDoJogador;
+	
+	// 0 - nâo foi utilizada
+	// 1- Jogador 1(x)
+	// 2- Jogador 2 (0)
+	var tab = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  
+    window.onload = function() {
+         carregaImagens();
+    }
+
+    function carregaImagens()
+    {
+       var x= document.getElementsByTagName("img");
+       for (i=1; i< x.length; i++)
+	   {
+           x[i].src ="white.png";
+		   tab[i]=0;
+		}
+		vezDoJogador=1;
+    }
+	
+    function jogar(i)
+    {
+	var cont=0;
+	
+	  for(var j=i; j<=42; j=j+7){
+	     if( tab[j]==0)
+	        {
+	         cont=j;
+	        }
+	  }
+        var x = document.getElementsByTagName("img");
+        if (vezDoJogador==1)
+        {    x[cont].src = "blue.png";
+             vezDoJogador=2;
+			 tab[cont]=1;
+        }
+        else
+        {
+            x[cont].src = "red.png";
+            vezDoJogador=1;
+			tab[cont]=2;
+        }
+		
+		   alguemGanhou();
+	   
+	  }
+    }
+	
+	//Verificar quem ganhou!
+	function alguemGanhou()
+	{
+	//verificar linhas
+	   for(var i=1; i<=39; i=i+4)
+	   {
+		if(tab[i]==1 && tab[i+1]==1 && tab[i+2]==1 && tab[i+3]==1)
+		{
+		  alert("Jogador X ganhou!");
+		   carregaImagens();
+	 
+		}
+		
+		
+		if(tab[i]==2 && tab[i+1]==2 && tab[i+2]==2 && tab[i+3]==2)
+		{
+		  alert("Jogador 0 ganhou!");
+		   carregaImagens();
+	 
+		}
+		}
+		
+		
+		
+		
+		//verificar colunas
+		for(var i=1; i<=15; i=i+7)
+		{
+		if(tab[i]==1 && tab[i+7]==1 && tab[i+14]==1 && tab[i+21]==1)
+		{
+		  alert("Jogador X ganhou!");
+		   carregaImagens();
+	 
+		}
+		
+		
+		if(tab[i]==2 && tab[i+7]==2 && tab[i+14]==2 && tab[i+21]==2)
+		{
+		  alert("Jogador 0 ganhou!");
+		   carregaImagens();
+	 
+		}
+		
+		}
+		//verificar Diagonal principal
+		for(var i=1; i<=18;i=i+8){
+		
+		if(tab[i]==1 && tab[i+8]==1 && tab[i+16]==1 && tab[i+24]==1)
+		{
+		  alert("Jogador x ganhou");
+		  carregaImagens();
+		}
+		if(tab[i]==2 && tab[i+8]==2 && tab[i+16]==2 && tab[i+24]==2)
+		{
+		alert("Jogador 0 ganhou");
+		carregaImagens();
+		}
+		}
+		
+		// verificar giagonaç secudaria
+		for(var i=1;i<=21;i=i+6){
+		if(tab[i]==1 && tab[i+6]==1 && tab[i+12]==1 && tab[i+18]==1)
+		{
+		  alert("Jogador x ganhou");
+		  carregaImagens();
+		}
+		if(tab[i]==1 && tab[i+6]==1 && tab[i+12]==1 && tab[i+18]==1)
+		{
+		alert("Jogador 0 ganhou");
+		carregaImagens();
+		}
+		}
+		
+		
+		//verificar empate
+		var empate =true;
+		for(var i=1; i<=42; i++)
+		{
+		  if(tab[i]==0)
+		   empate=false;
+		
+		}
+		
+		if(empate) { alert("Empate!"); carregaImagens();}
+		
+	
+	}
+	</script>
+  
+   <title>Jogo Connect 4</title>
+  </head>
+
+ <body>
+ <div id="logotipo"><h1>Jogo Connect 4</h1><img src="tictactoe.png" /></div>
+
+ <div id="tabuleiro" >
+  
+ <div class="linha" >
+    <div class="celula" onclick="jogar(1)" > <img /> </div>
+    <div class="celula" onclick="jogar(2)" > <img /> </div>
+    <div class="celula" onclick="jogar(3)" > <img /> </div> 
+	<div class="celula" onclick="jogar(4)" > <img /> </div>
+    <div class="celula" onclick="jogar(5)" > <img /> </div>
+    <div class="celula" onclick="jogar(6)" > <img /> </div> 
+	<div class="celula" onclick="jogar(7)" > <img /> </div> 
+ </div>
+
+
+  <div class="linha" >
+    <div class="celula" onclick="jogar(8)" > <img /> </div>
+    <div class="celula" onclick="jogar(9)" > <img /> </div>
+    <div class="celula" onclick="jogar(10)" > <img /> </div> 
+	<div class="celula" onclick="jogar(11)" > <img /> </div>
+    <div class="celula" onclick="jogar(12)" > <img /> </div>
+    <div class="celula" onclick="jogar(13)" > <img /> </div> 
+	<div class="celula" onclick="jogar(14)" > <img /> </div> 
+ </div>
+
+ <div class="linha" >
+    <div class="celula" onclick="jogar(15)" > <img /> </div>
+    <div class="celula" onclick="jogar(16)" > <img /> </div>
+    <div class="celula" onclick="jogar(17)" > <img /> </div> 
+	<div class="celula" onclick="jogar(18)" > <img /> </div>
+    <div class="celula" onclick="jogar(19)" > <img /> </div>
+    <div class="celula" onclick="jogar(20)" > <img /> </div> 
+	<div class="celula" onclick="jogar(21)" > <img /> </div> 
+ </div>
+  
+  <div class="linha" >
+    <div class="celula" onclick="jogar(22)" > <img /> </div>
+    <div class="celula" onclick="jogar(23)" > <img /> </div>
+    <div class="celula" onclick="jogar(24)" > <img /> </div> 
+	<div class="celula" onclick="jogar(25)" > <img /> </div>
+    <div class="celula" onclick="jogar(26)" > <img /> </div>
+    <div class="celula" onclick="jogar(27)" > <img /> </div> 
+	<div class="celula" onclick="jogar(28)" > <img /> </div> 
+ </div>
+ 
+   <div class="linha" >
+    <div class="celula" onclick="jogar(29)" > <img /> </div>
+    <div class="celula" onclick="jogar(30)" > <img /> </div>
+    <div class="celula" onclick="jogar(31)" > <img /> </div> 
+	<div class="celula" onclick="jogar(32)" > <img /> </div>
+    <div class="celula" onclick="jogar(33)" > <img /> </div>
+    <div class="celula" onclick="jogar(34)" > <img /> </div> 
+	<div class="celula" onclick="jogar(35)" > <img /> </div> 
+ </div>
+ 
+  <div class="linha" >
+    <div class="celula" onclick="jogar(36)" > <img /> </div>
+    <div class="celula" onclick="jogar(37)" > <img /> </div>
+    <div class="celula" onclick="jogar(38)" > <img /> </div> 
+	<div class="celula" onclick="jogar(39)" > <img /> </div>
+    <div class="celula" onclick="jogar(40)" > <img /> </div>
+    <div class="celula" onclick="jogar(41)" > <img /> </div> 
+	<div class="celula" onclick="jogar(42)" > <img /> </div> 
+ </div>
+ </div> 
+
+</body>
+ </html>

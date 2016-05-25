@@ -1,0 +1,20 @@
+	#logotipo {
+		margin: 0 auto;
+		width: 940px;
+		text-align:center;
+	}
+	#tabuleiro{
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	.linha { 
+		margin: 0 auto;
+		width: 940px;
+		float: center;
+	}
+	.celula {
+		border: solid;
+		width: 120px;
+		float: left;
+	}

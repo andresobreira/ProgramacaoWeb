@@ -19,6 +19,7 @@
 	
     function jogar(i){
 	var cont=0;
+	if(tab[i]==0){
 	for(var j=i; j<=42; j=j+7){
 	    if( tab[j]==0){
 			cont=j;
@@ -34,7 +35,8 @@
         x[cont].src = "img/red.png";
         vezDoJogador=1;
 		tab[cont]=2;
-    }
+     }
+	}
 	alguemGanhou();
 	}
 

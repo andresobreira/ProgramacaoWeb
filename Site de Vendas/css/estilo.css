@@ -14,7 +14,7 @@ header#cabecalho {
 }
 header#cabecalho a {
 	display:inline-block;
-	background-color:#1aff1a;
+	background-color:#00cc44;
 	padding:10px;
 	margin: 5px 10px 10px 5px;
 	text-decoration:none;
@@ -29,7 +29,7 @@ header#cabecalho a:hover{
 header#cabecalho h1{
 	font-family: 'Lobster', cursive;
 	font-size: 40pt;
-	color: #1aff1a;
+	color: #00cc44;
 	text-shadow: 5px 5px 5px rgb(0, 0, 0);
 	padding:0px;
 	margin:0px;
@@ -42,7 +42,7 @@ header#cabecalho h2{
 	padding:0px;
 	margin-top:50px;
 	font-family: 'Indie Flower', cursive;
-	color:#1aff1a;
+	color:#00cc44;
 	text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 header#cabecalho form#login{
@@ -93,7 +93,7 @@ nav#menu ul{
 
 nav#menu li{
 	display:inline-block;
-	background-color:#1aff1a;
+	background-color:#00cc44;
 	padding:30px;
 	margin:0px;
 	position:relative;
@@ -146,11 +146,9 @@ div#interface {
 	padding: 10px;
 	margin-right:0px;
 }
-div#interface header#cabecalho{
-	background-color:#e6ffee;
-}
+
 div#interface footer{
-	background-color:#1aff1a;
+	background-color:#00cc44;
 }
 
 

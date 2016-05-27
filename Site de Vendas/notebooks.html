@@ -6,18 +6,19 @@
 	<link rel="icon" type="image/ico" href="img/logo.ico" />
 	<title>ON Informática | Notebooks</title>
  </head>
- <body onload="myFunction()">
+ <body id="corpo" onload="myFunction()">
 	<div id="interface">
 	<header id="cabecalho">
 		<a accesskey="1" href="#menu" id="link-conteudo">Ir para o conteúdo <span>[1] </span></a>
 		<a accesskey="2" href="#cabecalho" id="link-menu">Ir para o menu <span>[2] </span></a>
 		<a accesskey="3" href="#rodape" id="link-rodape">Ir para o rodapé<span>[3] </span> </a>
 		<a accesskey="4" href="#busca" id="link-busca">Ir para busca <span>[4]</span></a>
-		<a accesskey="5" href="#" id="link-alto-contraste">Alto Contraste <span>[5]</span></a>
-		<a accesskey="6" href="mapaSite.html" id="link-mapa-site"><span>[6]</span>Mapa do site</a>
-	    <form>
-		<h1>ON Informática</h1>
-		<h2>Segurança em sua compra Online</h2>
+		<a accesskey="5" href="#" onclick="mudaCor(1)" id="link-alto-contraste">Alto Contraste <span>[5]</span></a>
+		<a accesskey="6" href="mapaSite.html" id="link-mapa-site">Mapa do site <span>[6]</span></a>
+		<script type="text/javascript" src="js/altocontraste.js"></script>
+	    <form >
+		<h1 id="nome-empresa">ON Informática</h1>
+		<h2 id="slogan" >Segurança em sua compra Online</h2>
 		</form>
 		<form id="login">
 			Login:<br>
@@ -26,37 +27,38 @@
 			<input id="senha1" type="password" required name="psw" placeholder="8 dígitos" pattern="\d{8}"><br>
 			<input type="submit" value="Entrar"><br>
 			Não é cadastrado ainda? <br>
-			<a href="telaCadastro.html">Cadastre-se agora</a>
+			<a href="telaCadastro.html" id="cadastrar" >Cadastre-se agora</a>
 		</form>
 		<!-- BUSCA NO SITE -->
 		<form id="busca" method="get" action="/search/">
-			<input id="caixa" type="search" name="busca" placeholder="Pesquisar...">	
-			<button type="button" action="">ok</button>
+			<input id="caixa" type="search" name="busca" placeholder="Pesquisar...">		
+			<button type="button">ok</button>
 		</form>
 	</header>
 	<!-- MENU -->
 	<nav id="menu">
 	 <ul>
-		<li><a href="index.html" title="Home">Início</a> </li>
-		<li><a href="notebooks.html" title="Notebooks">Notebooks</a> </li>
-		<li><a href="smartphones.html">Smartphones</a> </li>
-		<li><a href="tablets.html">Tablets</a></li>
-		<li><a href="sobre.html">Sobre Nós</a></li>
+		<li id="menu1"><a id="menu1.1" href="index.html" title="Home">Início</a> </li>
+		<li id="menu2"><a  id="menu1.2" href="notebooks.html" title="Notebooks">Notebooks</a> </li>
+		<li id="menu3"><a id="menu1.3" href="smartphones.html">Smartphones</a> </li>
+		<li id="menu4"><a id="menu1.4" href="tablets.html">Tablets</a></li>
+		<li id="menu5"><a id="menu1.5" href="sobre.html">Sobre Nós</a></li>
 	 </ul>
 	</nav>
 	<!-- BANNER -->
 	<section id="promocao">
-		<link rel="stylesheet" type="text/css" href="css/estiloBanner.css" scoped="scoped"/>
+	    <h6>Banner Promocional</h6>
+		<link rel="stylesheet" type="text/css" href="css/estiloBanner.css" property=''>
 	    <div id="wrapper">
 			<a id="bannerclick" href="#">
-			<img id="banner" src="img/banner1.jpg"></img>
-			</a></br>
+			<img id="banner" src="img/banner1.jpg" alt="Banner Promocional">
+			</a><br>
 		</div>
 		<div id="bip"></div>
 		<script type="text/javascript" src="js/rotinaBanner.js"></script>
 	</section>
 	<!-- PRODUTOS -->	
-	<article id="imagens">
+	<section id="imagens">
 		<ul>
 			<li id="notebook1"><h2>Notebook Samsung Expert X23</h2>
 				<h5 id="notebook11">Notebook Samsung Expert X23 Intel Core i5 - Placa de Vídeo 2BG 8GB 1TB Windows 10 LED 15,6"</h5>
@@ -77,7 +79,7 @@
 				<h5 id="notebook61">Notebook Asus Z450 Intel Core i5 4GB 1TB - Windows 10 LCD 14 HDMI Bluetooth</h5>
 				<h3 id="notebook62">R$ 2.849,05 à vista</h3></li>
 		</ul>
-	</article>
+	</section>
 	<!-- PUBLICIDADES -->
 	<aside id="publi1">
 		<img src="img/publi1.jpg" alt="Publicidade 1" >

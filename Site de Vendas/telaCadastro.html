@@ -24,7 +24,7 @@
 			Login:<br>
 			<input id="email" type="email" required name="email" placeholder="email@exemplo.com"><br>
 			Senha:<br>
-			<input id="senha1" type="password" required name="psw" placeholder="8 dígitos" pattern="\d{8}"><br>
+			<input id="senha" type="password" required name="psw" placeholder="8 dígitos" pattern="\d{8}"><br>
 			<input type="submit" value="Entrar"><br>
 			Não é cadastrado ainda? <br>
 			<a href="telaCadastro.html">Cadastre-se agora</a>
@@ -32,7 +32,7 @@
 		<!-- BUSCA NO SITE -->
 		<form id="busca" method="get" action="/search/">
 			<input id="caixa" type="search" name="busca" placeholder="Pesquisar...">		
-			<button type="button" action="">ok</button>
+			<button type="button">ok</button>
 		</form>
 	</header>
 	<!-- MENU -->
@@ -48,8 +48,8 @@
 	<!-- CAMPOS DE CADASTRO -->
 	<section  id="formulario">
 		<!-- DADOS PESSOAIS-->
+	<form method="post">
 	<fieldset id="usuario">
-		<form method="post">
 		<legend>Dados Pessoais</legend>
 		<table cellspacing="10">
 			<tr>
@@ -76,8 +76,7 @@
 					<input id="cpf" type="text" required name="cpf" size="14" maxlength="14" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
 				</td>
 			</tr>
-		</table>	
-	<br>
+		</table>
 	</fieldset>
 		<!-- ENDEREÇO -->
 	<fieldset id="endereco">
@@ -102,9 +101,9 @@
 				</td>
 			</tr>
 			<tr>
-				<td><label for="estado">Estado*:</label></td><td align="left">
+				<td><label>Estado*:</label></td><td align="left">
 					<input list="estado">
-					<datalist id="estado" required>
+					<datalist id="estado">
 					<option value="Acre">Acre</option> 
 					<option value="Alagoas">Alagoas</option> 
 					<option value="Amazonas">Amazonas</option> 
@@ -141,31 +140,30 @@
 				</td>
 			</tr>
 		</table>
-		</fieldset>
-	<br>
+	</fieldset>
 		<!-- DADOS DE LOGIN -->
-	<fieldset id="login">
+	<fieldset id="dadosLogin">
 	<legend>Dados de login</legend>
 		<table cellspacing="10">
 			<tr>
 				<td><label for="email">E-mail*: </label></td><td align="left">
-					<input id="email" type="email" required name="email" placeholder="email@examplo.com">
+					<input id="emailCad" type="email" required name="email" placeholder="email@examplo.com">
 				</td>
 			</tr>
 			<tr>
-				<td><label for="pass">Senha*: </label></td><td align="left">
+				<td><label>Senha*: </label></td><td align="left">
 					<input id="senha1" type="password" required name="pass" placeholder="8 dígitos" pattern="\d{8}">
 				</td>
 			</tr>
 			<tr>
-				<td><label for="passconfirm">Confirme a senha*: </label></td><td align="left">
+				<td><label>Confirme a senha*: </label></td><td align="left">
 					<input id="senha2" type="password" required name="passconfirm" placeholder="8 dígitos" pattern="\d{8}">
 				</td>
 			</tr>
 		</table>
 	</fieldset>
 	<h5>* campos obrigatórios.</h5>
-	<input type="image" name="benviar" src="img/botao-enviar.png"><br><br>
+	<input type="image" name="benviar" alt="botão enviar dados cadastro" src="img/botao-enviar.png"><br><br>
 	</form>
 	</section>
 	<!-- RODAPÉ -->
@@ -183,5 +181,6 @@
         alt="Valid CSS!" /></a>
 		</p>
 	</footer> 
+	</div>
  </body>
  </html>

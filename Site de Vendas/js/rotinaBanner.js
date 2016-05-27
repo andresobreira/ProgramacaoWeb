@@ -1,7 +1,7 @@
 	var counter=1;
 	var intervalId=null;
 	var totalimg=0;
-	var imgsrc="img/banner1.jpg";
+	var imgsrc="img/bannerB.jpg";
 	var imglink="#";
 	function myFunction(){
 	
@@ -22,16 +22,23 @@
 	     counter=1;
 		 totalimg=totalimg+1;
 		 if(totalimg==1){
-		    imgsrc="img/banner2.jpg";
+		    imgsrc="img/bannerC.jpg";
 			imglink="#";
 		  }
 		  else if(totalimg==2){
-		    imgsrc="img/banner3.png";
+		    imgsrc="img/bannerD.jpg";
 			imglink="#";
-		
 		   }
 		  else if(totalimg==3){
-		    imgsrc="img/banner4.png";
+		    imgsrc="img/bannerE.jpg";
+			imglink="#";
+		  }
+		  else if(totalimg==4){
+		    imgsrc="img/bannerA.jpg";
+			imglink="#";
+		  }
+		  else if(totalimg==5){
+		    imgsrc="img/bannerB.jpg";
 			imglink="#";
 			totalimg=0;
 		  }

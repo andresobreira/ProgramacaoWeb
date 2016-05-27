@@ -2,6 +2,8 @@
  <html lang="pt-br">
  <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/estilo.css">
 	<link rel="icon" type="image/ico" href="img/logo.ico" >
 	<title>ON Informática | Início</title>
@@ -16,7 +18,7 @@
 		<a accesskey="5" href="#" onclick="mudaCor(1)" id="link-alto-contraste">Alto Contraste <span>[5]</span></a>
 		<a accesskey="6" href="mapaSite.html" id="link-mapa-site">Mapa do site <span>[6]</span></a>
 		<script type="text/javascript" src="js/altocontraste.js"></script>
-	    <form >
+	    <form>
 		<h1 id="nome-empresa">ON Informática</h1>
 		<h2 id="slogan" >Segurança em sua compra Online</h2>
 		</form>
@@ -58,18 +60,27 @@
 		<script type="text/javascript" src="js/rotinaBanner.js"></script>
 	</section>
 	<!-- IMAGENS -->
-	<section id="imagens">
+	<section id="imagens" onload="MyFunction()">
 		<ul >
 		  <li id="notebook"><h2>Notebook Samsung Expert X23</h2>
 			<h5>Samsung Expert X23 Intel Core i5 - Placa de Vídeo 2BG 8GB 1TB Windows 10 LED 15,6"</h5>
-			<h3>R$ 3.324,05 à vista</h3></li>
+			<h3>R$ 3.324,05 à vista</h3>
+			<button type="button" class="show-modal1">Ver vídeo</button></li>
 		  <li id="tablet"><h2>Tablet Samsung Galaxy Tab E</h2>
 			<h5>Tablet Samsung Galaxy Tab E 8GB Tela 9.6 Wi-Fi - Android 4.4 Quad-Core Câm. 5MP + Frontal 2MP GPS</h5>
-			<h3>R$ 849,90 à vista</h3></li>
+			<h3>R$ 849,90</h3>
+			<button type="button" class="show-modal2">Ver vídeo</button></li>
 		  <li id="celular"><h2>Smartphone Lumia 535</h2>
 			<h5>Smartphone Microsoft Lumia 535 8GB Dual Chip 3G - Câm. 5MP Tela 5" Proc. Quad Core Windows Phone 8.1</h5>
-			<h3>R$ 799,00 à vista</h3></li>
-	  </ul>
+			<h3>R$ 799,00</h3>
+			<button type="button" class="show-modal3">Ver vídeo</button></li>
+		</ul>
+		<section id="clickVideo">
+			<link href="css/showYtVideo.css" rel="stylesheet" type="text/css">
+			<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+			<script src="js/jquery.showYtVideo.js"></script>
+			<script type="text/javascript" src="js/rotinaVideo.js"></script>
+		</section>
 	</section> 
 	<!-- PUBLICIDADES -->
 	<aside id="publi1">

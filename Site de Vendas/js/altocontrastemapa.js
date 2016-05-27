@@ -1,10 +1,8 @@
-
 var temp=1;
 function mudaCor(i) {
 	
 if(temp==i){
  document.getElementById("interface").style.backgroundColor = "black";
- document.getElementById("interface").style.color = "white";
  document.getElementById("corpo").style.backgroundColor = "white";
  document.getElementById("rodape").style.backgroundColor="black";
  document.getElementById("cabecalho").style.backgroundColor = "black";
@@ -48,13 +46,18 @@ if(temp==i){
  document.getElementById("login").style.color  = "black";
  document.getElementById("nome-empresa").style.color = "black";
  document.getElementById("slogan").style.color  = "black";
-
+ document.getElementById("sobrenos").style.color  = "white";
+ document.getElementById("ir-inicio").style.color  = "#ffff1a";
+ document.getElementById("ir-notebooks").style.color  = "#ffff1a"; 
+ document.getElementById("ir-smartphones").style.color  = "#ffff1a";
+ document.getElementById("ir-tablets").style.color  = "#ffff1a";
+ document.getElementById("ir-sobre-nos").style.color  = "#ffff1a";
+ document.getElementById("ir-cadastro").style.color  = "#ffff1a";
  temp=2;
 
 }
 
 else {
-
  document.getElementById("interface").style.backgroundColor = "white";
  document.getElementById("interface").style.color = "black";
  document.getElementById("corpo").style.backgroundColor = "#009933";
@@ -100,13 +103,16 @@ else {
  document.getElementById("login").style.color  = "black";
  document.getElementById("nome-empresa").style.color = "#00cc44";
  document.getElementById("slogan").style.color  = "#00cc44";
+ document.getElementById("sobrenos").style.color  = "#888888";
+ document.getElementById("sobre").style.color  = "#888888";
+ document.getElementById("ir-inicio").style.color  = "blue";
+ document.getElementById("ir-notebooks").style.color  = "blue"; 
+ document.getElementById("ir-smartphones").style.color  = "blue";
+ document.getElementById("ir-tablets").style.color  = "blue";
+ document.getElementById("ir-sobre-nos").style.color  = "blue";
+ document.getElementById("ir-cadastro").style.color  = "blue";
  temp=1;
 }
 
 
-
-
-
-
 }
- 

@@ -151,7 +151,22 @@ div#interface footer{
 	background-color:#00cc44;
 }
 
-
+/*Formatação de Video */
+section#imagens video{
+	position:relative;
+	top:260;
+	left:80px;
+}
+ video#clickVideo link{
+	position:relative;
+	top:260;
+	left:80px;
+}
+video#clickVideo script{
+	position:relative;
+	top:260;
+	left:80px;
+}
 
 /*Formatação de Imagens com legendas */
 
@@ -344,7 +359,7 @@ section#formulario fieldset{
 	border-color:#cecece;
 	margin:20px;
 }
-section#formulario fieldset#login{
+section#formulario fieldset#dadosLogin{
      background: url("../img/icone-login.png") no-repeat 80% 80%;
 }
 section#formulario fieldset#usuario{
@@ -353,4 +368,9 @@ section#formulario fieldset#usuario{
 section#formulario fieldset#endereco{
 	 background: url("../img/icone-endereco.png") no-repeat 80% 80%;
 }
-
+section#formulario td{
+	text-align:left;
+}
+section#formulario table{
+	padding:30px;
+}

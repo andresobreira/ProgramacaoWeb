@@ -9,11 +9,11 @@
 	
 	}
 	function bip(){
-	  var imgobj= document.getElementById("banner");//criando o objeto do elemento banner para substituir a image no correr do tempo
+	  var imgobj= document.getElementById("banner");//criando o objeto do elemento banner para substituir a imagem no correr do tempo
 	  var imglinkh=document.getElementById("bannerclick");//criando o objeto do elemento bannerclick para substituir o  link no correr do  tempo
 	  
 	  document.getElementById("bip").innerHTML= totalimg+1;//usado para contar o total de imagens no banner
-	  imgobj.src=imgsrc;//substitui a image
+	  imgobj.src=imgsrc;//substitui a imagem
 	  imglinkh.href= imglink;//substitui o link
 	  
 	  counter=counter+1;

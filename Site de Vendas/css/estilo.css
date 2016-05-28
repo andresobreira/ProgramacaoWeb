@@ -116,14 +116,8 @@ nav#menu a:hover{
 	color: #ffffff;
 	text-decoration:underline;
 }
-/*Formatação Banner*/
 
-section#promocao {
-	display: block;
-	height:400px;
-	width:700px;
 
-}
 /*Formatacao Mapa do site*/
 section#sobre img{
 	position: relative ;
@@ -339,7 +333,7 @@ section#sobre h1{
 	top:0px;
 	left:430px;
 }
-/*Formatação dos Formulários */
+/*Formatação da tela de Formulário de Cadastro*/
 
 section#formulario {
 	width:800px;

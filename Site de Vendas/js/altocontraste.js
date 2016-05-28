@@ -61,7 +61,7 @@ else {
 
  document.getElementById("interface").style.backgroundColor = "white";
  document.getElementById("interface").style.color = "black";
- document.getElementById("corpo").style.backgroundColor = "#009933";
+ document.getElementById("corpo").style.backgroundColor = "gray";
  document.getElementById("rodape").style.backgroundColor="#00cc44";
  document.getElementById("cabecalho").style.backgroundColor = "white";
  document.getElementById("rodape").style.color = "black";

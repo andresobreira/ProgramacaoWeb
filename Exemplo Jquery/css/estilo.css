@@ -1,0 +1,37 @@
+
+button#movimento{
+	position: absolute;
+	height:100px;
+	width:300px;
+	background:red;
+	font-size: 40px;
+	top:50px;
+	left:100px;
+	
+}
+button#desaparecer{
+	position: absolute;
+	height:100px;
+	width:300px;
+	background:green;
+	font-size: 40px;
+	top:50px;
+	left:500px;
+	
+}
+button#aumentar{
+	position: absolute;
+	height:100px;
+	width:300px;
+	background:yellow;
+	font-size: 40px;
+	top:50px;
+	left:900px;
+	
+}
+
+img{
+	position:relative;
+	left:500px;
+	top:200px;
+}

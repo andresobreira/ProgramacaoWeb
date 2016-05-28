@@ -150,7 +150,18 @@ div#interface {
 div#interface footer{
 	background-color:#00cc44;
 }
+/*Formataçao dos Videos */
 
+section#imagens button{
+	 background-color:red;
+	 border: 2px solid black;
+	 color:white;
+	 width:90px;
+	 position:relative;
+	 top:70px;
+	 
+	 
+}
 
 /*Formatação de Imagens com legendas */
 

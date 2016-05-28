@@ -134,7 +134,7 @@ section#sobre img{
 /*Formatação da Interface*/
 
 body{
-	background-color:#009933;
+	background-color:gray;
 	color: rgba(0,0,0,1);
 }
 
@@ -178,7 +178,7 @@ section#imagens li{
 	margin:10px;
 	float:left;
 	border: 5px solid #ffffff;
-	background-color:#ffffff;
+	background-color:gray;
 	box-shadow:1px 1px 3px rgba(0,0,0,.4);
 	-webkit-transition: all 0.3s ease-in;
 }
@@ -187,7 +187,7 @@ section#imagens h2{
 	top:230px;
 	color:black;
 	text-shadow: 1px 1px 1px gray;
-	background-color:#1aff1a;
+	background-color:gray;
 	
 }
 section#imagens h3{

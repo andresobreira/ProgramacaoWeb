@@ -47,6 +47,7 @@ if(temp==i){
  document.getElementById("nome-empresa").style.color = "black";
  document.getElementById("slogan").style.color  = "black";
  document.getElementById("sobrenos").style.color  = "white";
+  document.getElementById("sobre").style.color  = "white";
 
  temp=2;
 
@@ -98,7 +99,7 @@ else {
  document.getElementById("login").style.color  = "black";
  document.getElementById("nome-empresa").style.color = "#00cc44";
  document.getElementById("slogan").style.color  = "#00cc44";
- document.getElementById("sobrenos").style.color  = "black";
+ document.getElementById("sobrenos").style.color  = "#888888";
  document.getElementById("sobre").style.color  = "#888888";
  temp=1;
 }

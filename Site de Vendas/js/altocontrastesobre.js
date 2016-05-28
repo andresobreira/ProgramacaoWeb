@@ -98,7 +98,7 @@ else {
  document.getElementById("login").style.color  = "black";
  document.getElementById("nome-empresa").style.color = "#00cc44";
  document.getElementById("slogan").style.color  = "#00cc44";
- document.getElementById("sobrenos").style.color  = "#888888";
+ document.getElementById("sobrenos").style.color  = "black";
  document.getElementById("sobre").style.color  = "#888888";
  temp=1;
 }

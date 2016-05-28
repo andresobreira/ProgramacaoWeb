@@ -151,22 +151,6 @@ div#interface footer{
 	background-color:#00cc44;
 }
 
-/*Formatação de Video */
-section#imagens video{
-	position:relative;
-	top:260;
-	left:80px;
-}
- video#clickVideo link{
-	position:relative;
-	top:260;
-	left:80px;
-}
-video#clickVideo script{
-	position:relative;
-	top:260;
-	left:80px;
-}
 
 /*Formatação de Imagens com legendas */
 
@@ -315,6 +299,15 @@ footer {
     text-align:center;
     padding:5px; 
 	margin:0px;
+	
+}
+footer#rodape img{
+    float:left;
+	position:relative;
+	top:-40px;
+	left:0px;
+	
+	margin-top:10px;
 }
 /*Formatação da tela Sobre Nós*/
 

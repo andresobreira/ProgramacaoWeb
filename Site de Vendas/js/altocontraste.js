@@ -54,8 +54,13 @@ if(temp==i){
 }
 
 else {
+	
+	var contraste= document.createElement('link');
+	contraste.rel= 'stylesheet';
+	contraste.href= 'css/estilo.css';
+	document.body.appendChild(contraste);
 
- document.getElementById("interface").style.backgroundColor = "white";
+ /*document.getElementById("interface").style.backgroundColor = "white";
  document.getElementById("interface").style.color = "black";
  document.getElementById("corpo").style.backgroundColor = "#009933";
  document.getElementById("rodape").style.backgroundColor="#00cc44";
@@ -99,7 +104,7 @@ else {
  document.getElementById("cadastrar").style.color = "black";
  document.getElementById("login").style.color  = "black";
  document.getElementById("nome-empresa").style.color = "#00cc44";
- document.getElementById("slogan").style.color  = "#00cc44";
+ document.getElementById("slogan").style.color  = "#00cc44";*/
  temp=1;
 }
 

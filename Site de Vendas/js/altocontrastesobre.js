@@ -47,7 +47,7 @@ if(temp==i){
  document.getElementById("nome-empresa").style.color = "black";
  document.getElementById("slogan").style.color  = "black";
  document.getElementById("sobrenos").style.color  = "white";
-  document.getElementById("sobre").style.color  = "white";
+ document.getElementById("sobre").style.color  = "white";
 
  temp=2;
 
